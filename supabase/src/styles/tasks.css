@@ -1,0 +1,22 @@
+const supabaseUrl = https://dajciyocihzulwngpqgn.supabase.co;
+const supabaseAnonKey = sb_publishable_f8pbcJaGy5opNfrTRI7bSw_M1HD_RqW;
+
+cosnt supabaseClient = supabase.createClient(https://dajciyocihzulwngpqgn.supabase.co, sb_publishable_f8pbcJaGy5opNfrTRI7bSw_M1HD_RqW);
+
+const addTaskBtn = document.getElementById('addTaskBtn');
+
+addTaskBtn.addEventListener('click', async () => {
+  const taskInput = document.getElementById('taskInput').value;
+
+  const {data, error} = await supabaseClient
+  .from('tasks')
+  .insert([{task: task, completed:fasle}]);
+
+  if(error){
+    alert(errror.message)
+  }else{
+    alert('Task added successfully!');
+  }
+ 
+  }
+});
