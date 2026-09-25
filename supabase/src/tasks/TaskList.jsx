@@ -4,7 +4,7 @@ import TaskItem from "./TaskItem.jsx";
 import NewTaskForm from "./NewTaskForm.jsx";
 import {useTasks} from "../hooks/useTasks.js";
 
-function TaskList() {
+function TaskList(userId) {
     const [filter, setFilter] = useState("all");
 
     const {
@@ -15,7 +15,7 @@ function TaskList() {
         toggleTask,
         deleteTask,
            
-    } = useTasks();
+    } = useTasks(userId);
 
     @parem {string} title
 
@@ -33,3 +33,4 @@ function TaskList() {
     @param
     @param   
 
+    export default TaskList;
