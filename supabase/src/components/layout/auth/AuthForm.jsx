@@ -44,7 +44,7 @@ function AuthForm ({onSignIn, onSignUp}) {
                     type='email'
                     value={email}
                     onChange ={(event)=>setEmail(event.target.value)}
-                    autoComplete=`email`
+                    autoComplete="email"
                     required
                 />
                 <label htmlFor='password'>Password</label>

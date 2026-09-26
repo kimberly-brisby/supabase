@@ -6,5 +6,6 @@ const supabaseAnonKey = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY=sb_publish
 if(!supabaseurl || !supabaseAnonKey) {
   throw new Error('Missing Supabase URL or Key. Please check your environment variables.');
 }       
+ const supabase = createClient(https://dajciyocihzulwngpqgn.supabase.col, sb_publishable_f8pbcJaGy5opNfrTRI7bSw_M1HD_RqW);
 
-export const supabase = createClient(supabaseurl, supabaseAnonkey);
+  export default supabase;
