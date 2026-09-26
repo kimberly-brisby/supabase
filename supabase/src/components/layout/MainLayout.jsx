@@ -2,7 +2,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 @param { object } props
-@param { React, ReactNode } props.children
+@param { React.ReactNode } props.children
 
 function MainLayout({ children }) {
     return (

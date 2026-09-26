@@ -30,7 +30,19 @@ function TaskList(userId) {
         await toggleTask(id, isComplete);
     };
 
-    @param
-    @param   
+    @param {number} id
+
+    const handleDeleteTask = async (id) => {
+        deleteTask(id);
+
+    };
+
+    const totalTasks = useMemo(() => tasks.length, [tasks]);
+    const completedTasks = useMemo(()=> tasks.filter((tasks) => tasks.
+    is_complete).length, [tasks]);
+
+    const visibleTasks = useMemo(() => tasks.filter(task))
+ 
+      
 
     export default TaskList;
