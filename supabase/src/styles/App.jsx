@@ -35,10 +35,25 @@ export default function App() {
 
   return(
     <MainLayout>
-      {!user ?(
-        <AuthForm />
+      {!user ? (
+        <AuthForm 
+        onSignIn={signIn}
+        onSignup={signUp}
+        />
       ) : (
-        <TaskList />
+        <>
+        <div className="session-bar">
+          <span>Sign in as {user.email}</span>
+
+          <button type='button' onClick={handleSignOut}>
+            Log out
+          </button>
+
+          {signOutError && <p role='alert'>{signOutError}</p>}
+        </div>
+
+        <TaskList userId={user.id} />
+        </>
       )}
     </MainLayout>
   );

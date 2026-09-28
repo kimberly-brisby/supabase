@@ -1,8 +1,8 @@
 import {useState, useMemo} from "react";
-import spinner from "react-bootstrap/Spinner";
+import Spinner from "react-bootstrap/Spinner";
 import TaskItem from "./TaskItem.jsx";
 import NewTaskForm from "./NewTaskForm.jsx";
-import {useTasks} from "../hooks/useTasks.js";
+import { useTasks } from "./useTask.js"
 
 function TaskList(userId) {
     const [filter, setFilter] = useState("all");
@@ -13,8 +13,7 @@ function TaskList(userId) {
         error, 
         addTask,
         toggleTask,
-        deleteTask,
-           
+        deleteTask,       
     } = useTasks(userId);
 
     @parem {string} title
