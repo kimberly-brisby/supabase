@@ -11,7 +11,7 @@ function useTasks(){
 
     @params {strings} title
 
-    const addTask = useCallback{async {title} => {
+    const addTask = useCallback{async {title} => {-
 }, []};
 
 @param {number} id
