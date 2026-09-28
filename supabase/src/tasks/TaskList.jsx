@@ -19,7 +19,7 @@ function TaskList(userId) {
 
     @parem {string} title
 
-    cosnt handleAddTask = (title) => {
+    const handleAddTask = (title) => {
         addTask(title);
     };
 

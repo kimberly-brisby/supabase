@@ -38,55 +38,55 @@ export default function App() {
     </MainLayout>
   );
 
-//   const button = document.getElementById('testBtn');
-//   const result = document.getElementById('result');
+  const button = document.getElementById('testBtn');
+  const result = document.getElementById('result');
 
-//   const supabaseUrl = 'https://your-supabase-url.supabase.co';
-//   const supabaseKey = 'sb_publishable_f8pbcJaGy5opNfrTRI7bSw_M1HD_RqW';
+  const supabaseUrl = 'https://your-supabase-url.supabase.co';
+  const supabaseKey = 'sb_publishable_f8pbcJaGy5opNfrTRI7bSw_M1HD_RqW';
 
-//   const supabaseClient = window.supabase.createClient(supabaseUrl, supabaseKey);
+  const supabaseClient = window.supabase.createClient(supabaseUrl, supabaseKey);
 
-//   button.addEventListener('click', async () => {
-//     result.innerText = "supabase client successfully connected";
-//   });
+  button.addEventListener('click', async () => {
+    result.innerText = "supabase client successfully connected";
+  });
 
-//   const supabaseURL = 'https://your-supabase-url.supabase.co';
-//   const supabaseKey = 'sb_publishable_f8pbcJaGy5opNfrTRI7bSw_M1HD_RqW';
+  const supabaseURL = 'https://your-supabase-url.supabase.co';
+  const supabaseKey = 'sb_publishable_f8pbcJaGy5opNfrTRI7bSw_M1HD_RqW';
 
-//   const supabaseClient = window.supabase.createClient(supabaseURL, supabaseKey);
+  const supabaseClient = window.supabase.createClient(supabaseURL, supabaseKey);
 
-//   const signupBtn = document.getElementById('signupBtn');
-//   const loginBtn = document.getElementById('loginBtn');
-//   const logoutBtn = document.getElementById('logoutBtn');
+  const signupBtn = document.getElementById('signupBtn');
+  const loginBtn = document.getElementById('loginBtn');
+  const logoutBtn = document.getElementById('logoutBtn');
 
-//   signupBtn.addEventListener('click', async () => {
-//     const email = document.getElementById('signupEmail').value;
-//     const password = document.getElementById('signupPassword').value;
+  signupBtn.addEventListener('click', async () => {
+    const email = document.getElementById('signupEmail').value;
+    const password = document.getElementById('signupPassword').value;
     
-//     const {data, error} = await supabaseClient.auth.signUp({
-//       email: email,
-//       password: password,
-//     });
+    const {data, error} = await supabaseClient.auth.signUp({
+      email: email,
+      password: password,
+    });
 
-//     if(erroe){
-//       alert(error.message)
-//     }else{
-//       alert("user registered successfully!")  
-//     }
+    if(erroe){
+      alert(error.message)
+    }else{
+      alert("user registered successfully!")  
+    }
 
-//     loginBtn.addEventListener('click', async () => {
-//       const email = document.getElementById('loginEmail').value;
-//       const password = document.getElementById('loginPassword').value;
+    loginBtn.addEventListener('click', async () => {
+      const email = document.getElementById('loginEmail').value;
+      const password = document.getElementById('loginPassword').value;
       
-//       const {data, error} = await supabaseClient.auth.signInWithPassword({
-//         email: email,
-//         password: password,
-//       });
+      const {data, error} = await supabaseClient.auth.signInWithPassword({
+        email: email,
+        password: password,
+      });
 
-//       if(error){
-//         alert(error.message)
-//       }else{
-//         document.getElementById("welcome").innerText = "Welcome back" + email;
-//       }
-// } 
+      if(error){
+        alert(error.message)
+      }else{
+        document.getElementById("welcome").innerText = "Welcome back" + email;
+      }
+} 
    
